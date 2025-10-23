@@ -2,43 +2,125 @@
 <html>
   <head>
     <title>My Amazing Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: #b3e0ff;
+        color: #23405a;
+        font-family: arial;
+        font-size: 20px;
+        padding: 10px;
+      }
+      #all-contents {
+        max-width: fit-content;
+        margin: auto;
+      }
+      nav {
+        background: linear-gradient(90deg, #b3e0ff 60%, #e0f7fa 100%);
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #a0c4e3;
+        margin-bottom: 15px;
+        box-shadow: 6px 6px #b3e0ff4b;
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+        color: #1a3a5d;
+        flex: 1;
+        margin: 0;
+        font-style: oblique;
+        font-size: 40px;
+        padding: 2px;
+        text-shadow: 0 2px 8px #b3e0ff;
+      }
+      #nav-ul {
+        list-style-image: none;
+      }
+      .nav-li {
+        display: inline-block;
+        padding: 5px;
+      }
+      #nav-ul a {
+        text-decoration: none;
+        color: #23405a;
+        padding-right: 25px;
+        transition: color 0.2s;
+      }
+      #nav-ul a:hover {
+        color: #0077b6;
+      }
+      main {
+        background: rgba(255, 255, 255, 0.7);
+        display: flex;
+        border-radius: 10px;
+        border: 1px solid #b3e0ff;
+        box-shadow: 6px 6px #b3e0ff4b;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .content {
+        flex: 1;
+        padding: 35px;
+      }
+      #portfolio {
+        background: #e0f7fa;
+        border-radius: 10px;
+        box-shadow: 6px 6px #b3e0ff4b;
+        padding: 20px;
+      }
+      #portfolio a {
+        color: #23405a;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s;
+      }
+      #portfolio a:hover {
+        color: #0077b6;
+        text-decoration: underline;
+      }
+    </style>
   </head>
 
   <body>
     <!-- All content goes here -->
     <div id="all-contents">
       <nav>
-         <h1>Josue Amazing Website</h1>
-  <ul id="nav-ul">
-    <li class="nav-li">
-      <a href="index.html">Home</a>
+        <h1>Josue Amazing Website</h1>
+        <ul id="nav-ul">
+          <li class="nav-li">
+            <a href="index.html">Home</a>
 
-      <a href="portfolio.html">Portfolio</a>
-      
-    </li>
-    <li class="nav-li">
-      
-    </li>
-  </ul>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-li"></li>
+        </ul>
       </nav>
 
       <main>
-         <div class="content">
-    <h1>Portfolio</h1>
-    <ul id="portfolio">
-        <li>
-  <a href="fsd-projects/platformer/">Platformer: A cannon-dodging adventure game for Halleb0t</a>
-</li>
-<li>
-  <a href="fsd-projects/bouncing-box/">Bouncing Box: A fun introduction to web game development</a>
-</li>
-<li>
-  <a href="fsd-projects/circularity/">Circularity: A poetic motion experiment with circles</a>
-</li>
-    </ul>
-  </div>
-     </main>
+        <div class="content">
+          <h1>Portfolio</h1>
+          <ul id="portfolio">
+            <li>
+              <a href="fsd-projects/platformer/"
+                >Platformer: A cannon-dodging adventure game for Halleb0t</a
+              >
+            </li>
+            <li>
+              <a href="fsd-projects/bouncing-box/"
+                >Bouncing Box: A fun introduction to web game development</a
+              >
+            </li>
+            <li>
+              <a href="fsd-projects/circularity/"
+                >Circularity: A poetic motion experiment with circles</a
+              >
+            </li>
+          </ul>
+        </div>
+      </main>
     </div>
   </body>
 </html>

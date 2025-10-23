@@ -3,6 +3,91 @@
   <head>
     <title>My Amazing Website</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: #b3e0ff;
+        color: #23405a;
+        font-family: arial;
+        font-size: 20px;
+        padding: 10px;
+      }
+      #all-contents {
+        max-width: fit-content;
+        margin: auto;
+      }
+      nav {
+        background: linear-gradient(90deg, #b3e0ff 60%, #e0f7fa 100%);
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #a0c4e3;
+        margin-bottom: 15px;
+        box-shadow: 6px 6px #b3e0ff4b;
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+        color: #1a3a5d;
+        flex: 1;
+        margin: 0;
+        font-style: oblique;
+        font-size: 40px;
+        padding: 2px;
+        text-shadow: 0 2px 8px #b3e0ff;
+      }
+      #nav-ul {
+        list-style-image: none;
+      }
+      .nav-li {
+        display: inline-block;
+        padding: 5px;
+      }
+      #navanchor {
+        text-decoration: none;
+        color: #23405a;
+        padding-right: 25px;
+        transition: color 0.2s;
+      }
+      #navanchor:hover {
+        color: #0077b6;
+      }
+      main {
+        background: rgba(255, 255, 255, 0.7);
+        display: flex;
+        border-radius: 10px;
+        border: 1px solid #b3e0ff;
+        box-shadow: 6px 6px #b3e0ff4b;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .sidebar {
+        margin-right: 25px;
+        padding: 20px;
+      }
+      .sidebar-img {
+        width: 250px;
+        border-radius: 10px;
+        border: 4px solid #b3e0ff;
+        box-shadow: 0 2px 12px #b3e0ff66;
+        background: rgba(255, 255, 255, 0.5);
+      }
+      .content {
+        flex: 1;
+        padding: 35px;
+      }
+      #Interests {
+        border: 10px silver ridge;
+        padding: 8px;
+        background: #e0f7fa;
+        border-radius: 10px;
+        box-shadow: 6px 6px #b3e0ff4b;
+      }
+      h2,
+      h3 {
+        margin: 0px;
+      }
+    </style>
   </head>
 
   <body>
@@ -11,40 +96,50 @@
       <nav>
         <h1>Josue Amazing Website</h1>
         <ul id="nav-ul">
+          <li class="nav-li"></li>
           <li class="nav-li">
-           
-                    </li>
-                    <li class="nav-li">
-                      <a id="navanchor" href="index.html"> Home</a>
-                        <a id="navanchor" href="portfolio.html">Portfolio</a>
-                        <a id="navanchor" href="images.html"> Images </a>
-                       
-                        </li>
+            <a id="navanchor" href="index.html"> Home</a>
+
+            <a id="navanchor" href="portfolio.html">Portfolio</a>
+
+            <a id="navanchor" href="images.html"> Images </a>
+
+            <a
+              id="navanchor"
+              href="https://sites.google.com/view/drive-u-7-home/tap-goal?authuser=0"
+            >
+              Games
+            </a>
+          </li>
         </ul>
       </nav>
 
-      <main>       
-      <!-- Sidebar section -->
-      <div class="sidebar">
-        <img class="sidebar-img" width=250px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fEXUJb8K0AvbqHpp7KBb8o3mySl09q73r77nVpqRXrSo-kwa5B5jcfNESSSqhSlN11Y&usqp=CAU">
-      </div>
-
-      <!-- Content Section -->
-       <div class="content">
-        <h2>Josue</h2>
-        <p>Student at Covington High School</p>
-
-        <!-- Interests Section -->
-        <div id="Interests">
-          <h3>Interests</h3>
-          <ul>
-            <li>Learning</li>
-            <li>Soccer</li>
-            <li>Sleeping</li>
-          </ul>
+      <main>
+        <!-- Sidebar section -->
+        <div class="sidebar">
+          <img
+            class="sidebar-img"
+            width="250px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fEXUJb8K0AvbqHpp7KBb8o3mySl09q73r77nVpqRXrSo-kwa5B5jcfNESSSqhSlN11Y&usqp=CAU"
+          />
         </div>
-      </div>
-    </main>
+
+        <!-- Content Section -->
+        <div class="content">
+          <h2>Josue</h2>
+          <p>Student at Covington High School</p>
+
+          <!-- Interests Section -->
+          <div id="Interests">
+            <h3>Interests</h3>
+            <ul>
+              <li>Learning</li>
+              <li>Soccer</li>
+              <li>Sleeping</li>
+            </ul>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
